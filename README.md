@@ -1,4 +1,3 @@
-
     # title
 
     ## Table of Contents
@@ -29,6 +28,4 @@
   
     ## Questions
     
-    Contact me via email at die or through my GitHub [profile](https://github.com/fhw). 
-    
-    
+    Contact me via email at die or through my GitHub [profile](https://github.com/fhw).
