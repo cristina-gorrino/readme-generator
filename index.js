@@ -54,28 +54,46 @@ const fs = require('fs');
 
 ## Table of Contents
 
-1. [Questions](#questions)
-    
+1. [Description](#description)
+
+2. [Installation](#installation)
+
+3. [Usage](#usage)
+
+4. [How to contribute](#contribute)
+
+5. [How to run tests](#tests)
+
+6. [License](#license)
+
+7. [Questions](#questions)
+
+<a name="description"></a>
 ## Description
     
 ${description}
-    
+
+<a name="installation"></a>
 ## Installation
     
 ${installation}
-    
+
+<a name="usage"></a>
 ## Usage
     
 ${usage}
-    
+
+<a name="contribute"></a>
 ## How to contribute
     
 ${contributing}
-    
+
+<a name="tests"></a>
 ## How to run tests
     
 ${testing}
-    
+
+<a name="license"></a>
 ## License
     
 <a name="questions"></a>
