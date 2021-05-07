@@ -3,7 +3,6 @@
 
     ## Table of Contents
 
-    1. [Questions](#questions)
     
     ## Description
     
@@ -27,7 +26,7 @@
     
     ## License
     
-    <a name="questions"></a>
+  
     ## Questions
     
     Contact me via email at die or through my GitHub [profile](https://github.com/fhw). 
