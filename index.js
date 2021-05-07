@@ -1,6 +1,5 @@
 const inquirer = require('inquirer')
 const fs = require('fs');
-const { title } = require('node:process');
 
 
 // Get user input
@@ -36,7 +35,7 @@ const { title } = require('node:process');
         message: 'How do you run tests?',
         name: 'testing',
     },
-    // Add list type to pick license
+    // TODO Add list type to pick license
     //
     {
         type: 'input',
@@ -50,43 +49,50 @@ const { title } = require('node:process');
     }
   ])
   .then(({title, description, installation, usage, contributing, testing, github, email}) =>{
+    const content = 
+    `
+    # ${title}
 
-    const content = `
-# ${title}
+    ## Table of Contents
 
-## Description
-
-${description}
-
-## Installation
-
-${installation}
-
-## Usage
-
-${usage}
-
-## How to contribute
-
-${contributing}
-
-## How to run tests
-
-${testing}
-
-## License
-
-## Questions
-
-Contact me via email at ${email} or through my GitHub [profile](https://github.com/${github}). 
-
-`
+    1. [Questions](#questions)
+    
+    ## Description
+    
+    ${description}
+    
+    ## Installation
+    
+    ${installation}
+    
+    ## Usage
+    
+    ${usage}
+    
+    ## How to contribute
+    
+    ${contributing}
+    
+    ## How to run tests
+    
+    ${testing}
+    
+    ## License
+    
+    <a name="questions"></a>
+    ## Questions
+    
+    Contact me via email at ${email} or through my GitHub [profile](https://github.com/${github}). 
+    
+    `
 fs.writeFile("README.md", content, (err) =>
 err ? console.error(err) : console.log("Success!"));
 
   }
 
   );
+
+
 
 
 
