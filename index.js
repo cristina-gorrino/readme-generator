@@ -50,41 +50,40 @@ const fs = require('fs');
   ])
   .then(({title, description, installation, usage, contributing, testing, github, email}) =>{
     const content = 
-    `
-    # ${title}
+`# ${title}
 
-    ## Table of Contents
+## Table of Contents
 
-    1. [Questions](#questions)
+1. [Questions](#questions)
     
-    ## Description
+## Description
     
-    ${description}
+${description}
     
-    ## Installation
+## Installation
     
-    ${installation}
+${installation}
     
-    ## Usage
+## Usage
     
-    ${usage}
+${usage}
     
-    ## How to contribute
+## How to contribute
     
-    ${contributing}
+${contributing}
     
-    ## How to run tests
+## How to run tests
     
-    ${testing}
+${testing}
     
-    ## License
+## License
     
-    <a name="questions"></a>
-    ## Questions
+<a name="questions"></a>
+## Questions
+
+Contact me via email at ${email} or through my GitHub [profile](https://github.com/${github}). 
     
-    Contact me via email at ${email} or through my GitHub [profile](https://github.com/${github}). 
-    
-    `
+`
 fs.writeFile("README.md", content, (err) =>
 err ? console.error(err) : console.log("Success!"));
 
