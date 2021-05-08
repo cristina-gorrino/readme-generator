@@ -36,7 +36,13 @@ const fs = require('fs');
         name: 'testing',
     },
     // TODO Add list type to pick license
-    //
+    {
+        type: 'list',
+        message: 'Choose a license; use arrow keys',
+        choices: ["MIT", "GPL", "Apache 2.0", "BSD"],
+        name: 'license',
+        default: "none",
+    },
     {
         type: 'input',
         message: 'What is your GitHub username?',
@@ -112,5 +118,22 @@ Contact me via email at ${email} or through my GitHub [profile](https://github.c
 return content
 }
 
+function handleLicense(response) {
+    const {license} = response;
 
+    var licBadge 
+    if (license === "MIT"){
+        licBadge = "https://img.shields.io/badge/license-MIT-brightgreen"
+    } else if (license === "GPL") {
+        licBadge = "https://img.shields.io/badge/license-GPL-brightgreen"
+    } else if (license === "Apache 2.0") {
+        licBadge = "https://img.shields.io/badge/license-Apache_2.0-brightgreen"
+    } else if (license === "BSD") {
+        licBadge = "https://img.shields.io/badge/license-BSD-brightgreen"
+    } else if (license === "none"){
+        licBadge = ``;
+    }
+
+
+}
   
