@@ -48,8 +48,15 @@ const fs = require('fs');
         name: 'email',
     }
   ])
-  .then(({title, description, installation, usage, contributing, testing, github, email}) =>{
-    const content = 
+  .then((response) => {
+    fs.writeFile("README.md", createContent(response), (err) =>
+    err ? console.error(err) : console.log("Success!"));
+  });
+
+
+function createContent(response) {
+const {title, description, installation, usage, contributing, testing, email, github} = response;
+const content = 
 `# ${title}
 
 ## Table of Contents
@@ -95,26 +102,15 @@ ${testing}
 
 <a name="license"></a>
 ## License
-    
+  
 <a name="questions"></a>
 ## Questions
 
 Contact me via email at ${email} or through my GitHub [profile](https://github.com/${github}). 
     
 `
-fs.writeFile("README.md", content, (err) =>
-err ? console.error(err) : console.log("Success!"));
-
-  }
-
-  );
-
-
-
-
-
-
-
+return content
+}
 
 
   
