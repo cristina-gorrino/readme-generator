@@ -23,6 +23,8 @@
 
 This project creates a template for README files including a table of contents, description and information on how to collaborate and contact the developer. It uses npm inquirer to prompt the user to input information in the console, which is used to generate the README file.
 
+Link to Demo video: https://drive.google.com/file/d/1iS2TsY5alYbKxwHMb3bbuPHDiQ_DJbAp/view
+
 <a name="installation"></a>
 ## Installation
     
