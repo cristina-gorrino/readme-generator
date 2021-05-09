@@ -21,7 +21,7 @@
 
 ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
 
-It creates a template for README files
+This project creates a template for README files including a table of contents, description and information on how to collaborate and contact the developer. It uses npm inquirer to prompt the user to input information in the console, which is used to generate the README file.
 
 <a name="installation"></a>
 ## Installation
@@ -48,7 +48,7 @@ None available
   
 MIT License
 
-        Copyright (c) [year] [fullname]
+        Copyright (c) 2021 Cristina Gorrino
         
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
