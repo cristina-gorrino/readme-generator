@@ -54,7 +54,7 @@ const fs = require('fs');
     }
   ])
   .then((response) => {
-    fs.writeFile("README.md", createContent(response), (err) =>
+    fs.writeFile("newREADME.md", createContent(response), (err) =>
     err ? console.error(err) : console.log("Success!"));
   });
 
